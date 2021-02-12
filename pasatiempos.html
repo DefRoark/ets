@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://rmrbdx.github.io/index.html -->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Pasatiempos</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+  </head>
+
+
+  <body>
+<div class="container">
+
+    <div>
+    
+    <header>
+      <h1>Inicio</h1>
+    </header>
+    <figure>  <img id="avatar" src="https://www.upiicsa.ipn.mx/assets/files/upiicsa/Inicio/ICON-UPIICSA.png" alt="Avatar">
+    </figure>
+
+   <mi-nav id="miNav">
+    <ul class="list-group">
+        <li class="list-group-item"><a href="./index.html">Sesión</a></li>
+        <li class="list-group-item"><a href="./ETSWEB.html">Pasatiempos</a>
+      </li>
+    </ul>
+  </mi-nav>
+    <p>
+      <label>
+        Nombre
+        <output id="yo">Robles R. R.</output>
+      </label>
+    </p>
+    <div class="container">
+      <table class="table my-3">
+      <thead>
+          <tr>
+              
+              <th scope="col">Pasatiempo</th>
+              
+          </tr>
+      </thead>
+        <tbody id="tabla2">        </tbody>
+    </table>
+  </div>
+    <mi-footer>ETS Programacion Web</mi-footer>
+    </div>
+  </div>  
+    <!--<script type="module">
+      import { Fábrica } from "./Fabrica.js";
+      import { muestraError } from "./util.js";
+
+      const ctrlSesión = Fábrica.instancia.ctrlSesión;
+      terminarSesión.addEventListener("click",
+        () => ctrlSesión.terminaSesión());
+
+      protege();
+      async function protege() {
+        try {
+          const usuarioAutorizado = await ctrlSesión.protege("");
+          miNav.protege(usuarioAutorizado.privilegios);
+          email.value = usuarioAutorizado.email;
+          nombre.value = usuarioAutorizado.nombre;
+          avatar.src = usuarioAutorizado.urlFoto;
+        } catch (error) {
+          muestraError(error)
+        }
+      }
+    </script>-->
+     <script src="app.js"></script>
+  
+
+</body></html>
